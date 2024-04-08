@@ -3,7 +3,7 @@ import helpers from "../helpers";
 
 const {asyncErrorHandler} = helpers
 
-const getDemo = asyncErrorHandler((req : Request, res: Response) => {
+const getDemo = asyncErrorHandler(async (req : Request, res: Response) => {
     res.status(200).send({msg : 'demo endpoint'})
 })
 

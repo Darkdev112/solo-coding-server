@@ -1,8 +1,8 @@
 import express,{Express,Request,Response } from "express";
-import cors,{CorsOptions} from 'cors'
+import cors,{CorsOptions} from 'cors';
 import config from "./config/config";
 import morgan from "./config/morgan";
-import routes from './api/routes'
+import routes from './api/routes';
 
 const options : CorsOptions = {
     origin : config.client_url
